@@ -31,16 +31,7 @@ Este proyecto fue desarrollado como parte de nuestra formación en la Tecnicatur
   
 
 - ##Estructura del proyecto -- en React (feature) 
-proyecto-programacion/
-├── public/               # Archivos estáticos públicos como imágenes, fuentes, favicon, etc.
-├── src/                  # Código fuente del proyecto
-│   ├── components/       # Componentes reutilizables de React (botones, formularios, etc.)
-│   ├── pages/            # Páginas principales del sitio (Home, About, Contact, etc.)
-│   ├── styles/           # Archivos CSS o preprocesadores como SASS para los estilos
-│   └── utils/            # Funciones auxiliares, helpers y lógica común utilizada en diferentes componentes
-├── tests/                # Pruebas unitarias y de integración con React Testing Library o Jest
-├── package.json          # Archivo de configuración del proyecto (scripts, dependencias, metadatos)
-└── README.md             # Archivo README con la descripción del proyecto, instalación y uso
+![image](https://github.com/user-attachments/assets/086ae5aa-bd4c-46af-bab3-70312b6de2e2)
 
 
 ## Instalación
