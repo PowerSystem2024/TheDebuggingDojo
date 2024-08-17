@@ -26,6 +26,7 @@ Este proyecto fue desarrollado como parte de nuestra formación en la Tecnicatur
 - camelCase
 
 - ##Estructura del proyecto -- en Java (Develop)
+
 mi-proyecto-java/
 ├── src/
 │   ├── main/
@@ -33,7 +34,7 @@ mi-proyecto-java/
 │   │   │   └── com/
 │   │   │       └── miempresa/
 │   │   │           └── miproyecto/
-│   │   │               ├── App.java
+│   │   │               └── App.java
 │   │   └── resources/
 │   │       └── application.properties
 │   └── test/
@@ -44,20 +45,20 @@ mi-proyecto-java/
 │       │               └── AppTest.java
 │       └── resources/
 └── README.md
-
   
 
 - ##Estructura del proyecto -- en React (feature) 
 proyecto-programacion/
-├── public/           # Archivos estáticos
-├── src/              # Código fuente
-│   ├── components/   # Componentes React
-│   ├── pages/        # Páginas del sitio
-│   ├── styles/       # Archivos CSS
-│   └── utils/        # Utilidades y funciones auxiliares
-├── tests/            # Pruebas unitarias y de integración
-├── package.json      # Dependencias y scripts
-└── README.md         # Este archivo
+├── public/               # Archivos estáticos públicos como imágenes, fuentes, favicon, etc.
+├── src/                  # Código fuente del proyecto
+│   ├── components/       # Componentes reutilizables de React (botones, formularios, etc.)
+│   ├── pages/            # Páginas principales del sitio (Home, About, Contact, etc.)
+│   ├── styles/           # Archivos CSS o preprocesadores como SASS para los estilos
+│   └── utils/            # Funciones auxiliares, helpers y lógica común utilizada en diferentes componentes
+├── tests/                # Pruebas unitarias y de integración con React Testing Library o Jest
+├── package.json          # Archivo de configuración del proyecto (scripts, dependencias, metadatos)
+└── README.md             # Archivo README con la descripción del proyecto, instalación y uso
+
 
 ## Instalación
 1. Clonar el repositorio:
