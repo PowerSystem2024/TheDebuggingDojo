@@ -30,7 +30,9 @@ Este proyecto fue desarrollado como parte de nuestra formación en la Tecnicatur
 ![image](https://github.com/user-attachments/assets/9c380bb4-15c4-49d4-bf61-1d5e8f15c893)
   
 
-- ##Estructura del proyecto -- en React (feature) 
+- ##Estructura del proyecto -- en React (feature)
+
+  
 ![image](https://github.com/user-attachments/assets/086ae5aa-bd4c-46af-bab3-70312b6de2e2)
 
 
