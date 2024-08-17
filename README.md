@@ -27,24 +27,7 @@ Este proyecto fue desarrollado como parte de nuestra formación en la Tecnicatur
 
 - ##Estructura del proyecto -- en Java (Develop)
 
-mi-proyecto-java/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/
-│   │   │       └── miempresa/
-│   │   │           └── miproyecto/
-│   │   │               └── App.java
-│   │   └── resources/
-│   │       └── application.properties
-│   └── test/
-│       ├── java/
-│       │   └── com/
-│       │       └── miempresa/
-│       │           └── miproyecto/
-│       │               └── AppTest.java
-│       └── resources/
-└── README.md
+![image](https://github.com/user-attachments/assets/9c380bb4-15c4-49d4-bf61-1d5e8f15c893)
   
 
 - ##Estructura del proyecto -- en React (feature) 
