@@ -40,6 +40,6 @@ Este proyecto fue desarrollado como parte de nuestra formación en la Tecnicatur
 ## Instalación
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/usuario/proyecto-programacion.git
+   git clone https://github.com/PowerSystem2024/TheDebuggingDojo.git
 
 
