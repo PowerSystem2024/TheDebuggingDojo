@@ -6,13 +6,13 @@ Este proyecto fue desarrollado como parte de nuestra formación en la Tecnicatur
 ## Integrantes del equipo
 - **Leandro Cattai**
 - **Nahuel Francia** 
-- **Flor**
+- **Florencia Cizmadija**
 - **Gabi Bruni**
-- **Juarez**
+- **Gonzalo Juarez**
 - **Pablo Correa**
-- **Pau**
-- **Schutt Lazaro**
-- **Schutt Valentin**
+- **Paula Cizmadija**
+- **Lazaro Schutt**
+- **Valentin Schutt**
 
 ## Tecnologías utilizadas
 - [React](https://reactjs.org/)
