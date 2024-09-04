@@ -1,5 +1,5 @@
-# Carpeta de Gonzalo Juarez
-### Carpeta con contenidos y actividades realizadas en el trascurso del segundo semestre en la tecnicatura...
+Gonzalo Juarez
+Carpeta con contenidos y actividades realizadas en el trascurso del segundo semestre en la tecnicatura...
 Contenido:
  - Python
  - Java
