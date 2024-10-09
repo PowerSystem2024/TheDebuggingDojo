@@ -1,0 +1,41 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>250</x><y>30</y><w>210</w><h>210</h></coordinates><panel_attributes>&lt;&lt;Persona&gt;&gt;
+--
+-nombre: String
+-genero: char
+-edad: int
+-direccion: String
+--
+/+getNombre(): Str/
+/+set nombre(String): void/
+/+getGenero(): char/
+/+setGenero(char): void/
+/+get edad(): int/
+/+set edad(int): void/
+/+getDireccion(): Str/
+/+setDireccion(String): void/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>60</x><y>330</y><w>210</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Empleado&gt;&gt;
+--
+-idDepartamento: int
+-sueldo: double
+--
+/+getIdDepartamento(): int/
+/+getSueldo(): double/
+/+setSueldo(double): void/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>430</x><y>330</y><w>210</w><h>110</h></coordinates><panel_attributes>&lt;&lt;Cliente&gt;&gt;
+--
+-idCliente: int
+-fechaRegistro: Date
+-vip: boolean
+--
+/+getCliente(): int/
+/+getFechaRegistro(): Date/
+/+setFechaRegistro(Date): void/
+/+idVip(): boolean/
+/+setVip(boolean): void/
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>150</x><y>280</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>280</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+
+</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>270</y><w>230</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>17;22;210;20</additional_attributes></element><element><id>Relation</id><coordinates><x>150</x><y>270</y><w>230</w><h>50</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>207;22;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>340</x><y>230</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-
+
+</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element></diagram>
