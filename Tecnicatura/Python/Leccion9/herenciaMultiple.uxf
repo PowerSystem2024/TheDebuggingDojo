@@ -1,0 +1,26 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>0</x><y>0</y><w>140</w><h>140</h></coordinates><panel_attributes>&lt;&lt;FiguraGeométrica&gt;&gt;
+--
+-alto
+-ancho
+--
++get_alto()
++set_alto(alto)
++get_ancho()
++get_ancho(ancho)
++__str__()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>310</y><w>140</w><h>70</h></coordinates><panel_attributes>&lt;&lt;Cuadrado&gt;&gt;
+--
+-area()
++__str__()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>40</y><w>140</w><h>100</h></coordinates><panel_attributes>&lt;&lt;Color&gt;&gt;
+--
+-color
+--
++get_color()
++set_color(color)
++__str__()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>60</x><y>130</y><w>90</w><h>200</h></coordinates><panel_attributes>lt=&lt;.&gt;
+&lt;&lt;extends&gt;</panel_attributes><additional_attributes>10;10;10;180</additional_attributes></element><element><id>Relation</id><coordinates><x>60</x><y>130</y><w>360</w><h>200</h></coordinates><panel_attributes>lt=&lt;.&gt;
+&lt;&lt;extends&gt;</panel_attributes><additional_attributes>340;10;10;180</additional_attributes></element><element><id>UMLClass</id><coordinates><x>330</x><y>310</y><w>140</w><h>70</h></coordinates><panel_attributes>&lt;&lt;Rectangulo&gt;&gt;
+--
++area()
++__str__()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>390</x><y>130</y><w>90</w><h>200</h></coordinates><panel_attributes>lt=&lt;.&gt;
+&lt;&lt;extends&gt;</panel_attributes><additional_attributes>10;10;10;180</additional_attributes></element><element><id>Relation</id><coordinates><x>60</x><y>130</y><w>360</w><h>200</h></coordinates><panel_attributes>lt=&lt;.&gt;
+&lt;&lt;extends&gt;</panel_attributes><additional_attributes>340;180;10;10</additional_attributes></element></diagram>
