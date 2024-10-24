@@ -1,0 +1,23 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram notes
+edad:
+</help_text><element><id>Relation</id><coordinates><x>310</x><y>140</y><w>100</w><h>120</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>290</y><w>210</w><h>70</h></coordinates><panel_attributes>persona1: Persona
+--
+nombre: str = 'Gabriel'
+apellido: str = 'Bruni'
+edad: int = 24</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>300</y><w>210</w><h>70</h></coordinates><panel_attributes>persona2: Persona
+--
+nombre: str = 'Osvaldo'
+apellido: str = 'Giordanini'
+edad: int = 45</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>230</y><w>100</w><h>80</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>230</y><w>100</w><h>70</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>220</y><w>250</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>10;20;230;20</additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>220</y><w>250</w><h>40</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>230;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>220</x><y>40</y><w>210</w><h>120</h></coordinates><panel_attributes>&lt;&lt;Persona&gt;&gt;
+--
+-nombre: str
+-apellido: str
+-edad: int
+--
+
+/mostrar_detalle()/</panel_attributes><additional_attributes></additional_attributes></element></diagram>
