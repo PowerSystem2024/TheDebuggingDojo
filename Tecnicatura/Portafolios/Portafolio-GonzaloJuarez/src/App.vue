@@ -1,11 +1,14 @@
 <script setup>
 import NavBar from './components/navbar.vue'
+import DatosPersonales from './components/DatosPersonales.vue';
 </script>
 
 <template>
   <header>
     <!--Barra de navegación-->>
     <NavBar />
+    <!--Datos Personales-->>
+    <DatosPersonales />
   </header>
   <main>
     <section id="sobremi"><h2>Sobre mi</h2></section>
