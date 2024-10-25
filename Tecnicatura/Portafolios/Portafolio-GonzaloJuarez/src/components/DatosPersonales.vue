@@ -8,7 +8,7 @@ const socialnetworks = [
     {id: 3, name: 'GitHub', src: 'src/assets/github_icon.svg', url: 'https://github.com/GonzaaJuarez' },
     {id: 4, name: 'Email', src: 'src/assets/email_icon.svg', url: 'mailto:GonzaloArielJuarez@gmail.com' },
     {id: 4, name: 'Curriculum Vitae', src: 'src/assets/cv_resume_icon.svg', url: '' }
-]
+];
 const phone = '+54 9 2625402555';
 const residence = 'San Rafael, Mendoza, Argentina';
 </script>
