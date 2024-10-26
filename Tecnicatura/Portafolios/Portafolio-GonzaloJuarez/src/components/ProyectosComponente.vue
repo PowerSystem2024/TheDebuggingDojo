@@ -153,4 +153,18 @@ misProyectos.value = ([
 .github-link:hover {
     background-color: rgb(135, 82, 145);
 }
+
+/* Diseño responsivo para pantallas pequeñas */
+@media (max-width: 1440px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+}
+
 </style>
