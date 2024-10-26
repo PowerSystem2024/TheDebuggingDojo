@@ -20,41 +20,57 @@ const navegacion = ref([
 </script>
 
 <style scoped>
+/* Estilo general de la navbar */
 .navbar {
-  background-color: var(--vt-c-indigo);
-  color: #fff;
-  padding: 0.5rem, 1rem;
-  align-items: center;
-}
-.navbar-menu {
+  background-color: rgba(42, 30, 53, 0.9);
+  padding: 1rem;
+  font-family: Arial, sans-serif;
   display: flex;
-  justify-content: flex-end;
-}
-.navbar-item {
-  color: #fff;
-  text-decoration: none;
-  margin-right: 1rem;
-}
-.nav-list {
-  list-style: none;
-}
-a {
-  border: 1px solid;
-  border-color: hsla(160, 100%, 37% 0.2);
-  border-radius: 5px;
-  text-decoration: none;
-  transition: 0.4s;
-  padding: 5px;
-}
-a:hover {
-background-color: hsla(160, 100%, 37%, 0.2);
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
 }
 
+/* Contenedor del menú */
+.navbar-menu ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilo de los enlaces */
+.nav-item {
+  color: #ffdd57;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.4s ease, color 0.4s ease;
+  font-size: 1rem;
+  border-radius: 30px;
+}
+
+/* Hover y active para los enlaces */
+.nav-item:hover {
+  background-color: rgb(76, 72, 77);
+  color: #ffdd57; /* Color de resaltado */
+}
+
+.nav-item:active {
+  background-color: #444;
+  color: #ffdd57; /* Otro color de resaltado para active */
+}
+
+/* Diseño responsivo para pantallas más pequeñas */
 @media (max-width: 768px) {
-  .navbar-menu {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
+  .navbar {
+    padding: 0.5rem;
+  }
+  .navbar-menu ul {
+    flex-direction: column;
+  }
+  .nav-item {
+    padding: 0.75rem 1rem;
+    text-align: center;
   }
 }
 </style>

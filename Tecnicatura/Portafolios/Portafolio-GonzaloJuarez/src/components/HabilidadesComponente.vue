@@ -92,79 +92,80 @@ const habilidades = ref([
 </template>
 
 <style scoped>
+/* Contenedor principal */
 .skills-contenedor {
     padding: 2rem;
-    /*Fondo cargado desde una imagen estatica en Assets*/
-    /* background-image: url('/src/assets/fondo-proyectos.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
-    /*Fondo con gradiente*/
-    background: linear-gradient(-45deg, #021526, #03346E, #6EACDA, #E2E2B6);
-    /*Fondo con color solido*/
-    /* background-color: rgb(28, 41, 52); */
+    background: linear-gradient(-45deg, #1C0F26, #3D1E4F, #522865, #2E2136);
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+/* Categoría de habilidades */
 .skills-categoria {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 .skills-categoria h3 {
-    display: flex;
-    justify-content: left;
-    margin-bottom: 10px;
-    font-size: 1.5em;
-    color: aliceblue;
-    font-size: 1.5em;
+    font-size: 1.8rem;
     font-weight: bold;
+    color: #f1f1f1;
+    border-bottom: 2px solid #522865;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
+/* Contenedor de habilidades */
 .skills {
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 1rem;
+    justify-content: space-around;
 }
 
+/* Tarjetas de habilidad */
 .skill {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 10px;
-    background-color: rgba(241, 245, 243, 0.856);
-    padding: 0.3em;
-    border-radius: 8px;
-    box-shadow: 0px 4px 12px rgba(2, 151, 151, 0.963);
-    flex: 1 1 200px;
-    max-width: 250px;
+    background-color: #4A3A56;
+    padding: 0.8rem;
+    border-radius: 10px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #fff;
+    max-width: 220px;
+    width: 100%;
 }
 
 .skill:hover {
-    background-color: rgba(2, 151, 151, 0.963);
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
+/* Estilo del icono */
 .skill img {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 5px;
 }
 
+/* Texto de la habilidad */
 .skill span {
-    font-size: 1em;
-    color: #333;
+    font-size: 1rem;
+    color: #f1f1f1;
+    font-weight: 500;
 }
 
-.skill:hover {
-    font-size: 1.3em;
-    transition: 2s ease;
-}
-
+/* Adaptación para pantallas pequeñas */
 @media (max-width: 768px) {
-    .skills-categoria h3 {
+    .skills {
         justify-content: center;
     }
 
-    .skill {
-        justify-content: center;
+    .skills-categoria h3 {
+        text-align: center;
     }
 }
 </style>

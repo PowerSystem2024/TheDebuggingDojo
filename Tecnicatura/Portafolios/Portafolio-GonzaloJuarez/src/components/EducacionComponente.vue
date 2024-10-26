@@ -2,11 +2,11 @@
 import { ref } from 'vue';
 const fechaColor = ref([]);
 fechaColor.value = [
-{color: '#41516c'},
-{color: '#FBCA3E'},
-{color: '#E24A68'},
-{color: '#1B5F8C'},
-{color: '#4CADAD'}
+{color: '#6B4E96'},
+{color: '#e84b2c'},
+{color: '#e6d839'},
+{color: '#7cd164'},
+{color: '#2eb8ac'}
 ];
 const educacion = ref([]);
 educacion.value = [
@@ -43,8 +43,8 @@ educacion.value = [
 
 /* Estilo para el cuerpo de la página */
 body {
-  --color: rgba(30, 30, 30); /* Variable para el color de texto */
-  --bgColor: rgba(245, 245, 245); /* Variable para el color de fondo */
+  --color: #1C1C1C; /* Variable para el color de texto */
+  --bgColor: rgb(55, 34, 59); /* Variable para el color de fondo */
   min-height: 100vh; /* Asegura que el cuerpo ocupe al menos el 100% de la altura de la ventana */
   display: grid; /* Utiliza el modelo de caja de cuadrícula */
   align-content: center; /* Centra verticalmente el contenido dentro de la cuadrícula */
@@ -75,7 +75,7 @@ ul::before {
   content: ""; /* Elemento vacío para crear la línea */
   grid-column: 1; /* Coloca la línea en la primera columna de la cuadrícula */
   grid-row: 1 / span 20; /* La línea se extiende sobre varias filas */
-  background: rgb(225, 225, 225); /* Color de la línea */
+  background: #B0BEC5; /* Color de la línea */
   border-radius: calc(var(--line-w) / 2); /* Bordes redondeados para la línea */
 }
 
@@ -101,7 +101,7 @@ ul li .fecha {
   margin-inline: calc(var(--inlineP) * -1); /* Ajusta el margen horizontal para que la fecha sobresalga */
   text-align: center; /* Centra el texto dentro de la fecha */
   background-color: var(--fecha-color); /* Color de fondo, usando una variable personalizada */
-  color: white; /* Color del texto en la fecha */
+  color: #FFFFFF; /* Color del texto en la fecha */
   font-size: 1.25rem; /* Tamaño del texto */
   font-weight: 700; /* Hace el texto en negrita */
   display: grid; /* Usa un layout de cuadrícula */
@@ -129,7 +129,7 @@ ul li .fecha::after {
   position: absolute; /* Posiciona el círculo respecto al contenedor de la fecha */
   width: 1rem; /* Ancho del círculo */
   aspect-ratio: 1; /* Mantiene una relación de aspecto 1:1 para crear un círculo */
-  background: var(--bgColor); /* Color de fondo, utilizando la variable definida */
+  background: #F5F5F5; /* Color de fondo, utilizando la variable definida */
   border: 0.3rem solid var(--fecha-color); /* Borde del círculo, con el color de la fecha */
   border-radius: 50%; /* Hace que el elemento sea un círculo perfecto */
   top: 50%; /* Centra verticalmente el círculo dentro del contenedor de la fecha */
@@ -140,12 +140,13 @@ ul li .fecha::after {
 /* Estilos para el título y la descripción dentro de cada ítem */
 ul li .title,
 ul li .descripcion {
-  background: var(--bgColor); /* Fondo del título y la descripción, usando la variable definida */
+  background: rgb(55, 34, 59); /* Fondo del título y la descripción, usando la variable definida */
   position: relative; /* Posiciona los elementos relativos a su contenedor */
   padding-inline: 1.5rem; /* Espaciado interno horizontal */
 }
 
 ul li .title {
+  color: #ffdd57; /* Color del título en tono oscuro */
   overflow: hidden; /* Oculta cualquier contenido que se desborde */
   padding-block-start: 1.5rem; /* Espaciado interno superior */
   padding-block-end: 1rem; /* Espaciado interno inferior */
@@ -153,6 +154,7 @@ ul li .title {
 }
 
 ul li .descripcion {
+  color: #ffffff; /* Texto de descripción en gris oscuro */
   padding-block-end: 1.5rem; /* Espaciado interno inferior */
   font-weight: 300; /* Hace el texto de la descripción más delgado */
 }
@@ -164,7 +166,7 @@ ul li .descripcion::before {
   position: absolute; /* Posiciona la sombra respecto al contenedor del título o descripción */
   width: 90%; /* Ancho de la sombra */
   height: 0.5rem; /* Altura de la sombra */
-  background: rgba(0, 0, 0, 0.5); /* Color de fondo oscuro para simular una sombra */
+  background: rgba(0, 0, 0, 0.2); /* Color de fondo oscuro para simular una sombra */
   left: 50%; /* Centra la sombra horizontalmente */
   border-radius: 50%; /* Bordes redondeados para la sombra */
   filter: blur(4px); /* Aplica un desenfoque para hacer la sombra más suave */
@@ -215,6 +217,14 @@ ul li .descripcion::before {
   ul li:nth-child(odd) .fecha {
     border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0; /* Ajusta los bordes redondeados para los ítems impares */
   }
+}
+ul li .enlace {
+  color: #FF7043; /* Color de los enlaces en tono azul */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+ul li .enlace:hover {
+  text-decoration: underline; /* Sube la línea en el enlace al pasar el mouse */
 }
 
 /* Estilo para los créditos */

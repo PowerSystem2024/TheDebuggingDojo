@@ -31,39 +31,83 @@ const residence = 'San Rafael, Mendoza, Argentina';
 </template>
 
 <style scoped>
+/* Estilo del contenedor principal */
+.datos-personales {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+}
+
+/* Tarjeta de presentación */
+.card {
+    background-color: rgb(55, 34, 59);
+    border-radius: 15px;
+    padding: 2rem;
+    max-width: 1000px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease;
+}
+
+/* Títulos y descripción */
 h1 {
     font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #ffdd57; /* Color resaltado */
 }
-p {
-    font-size: 1.2rem;
-    font-weight: 600;
+
+h2 {
+    font-size: 1.5rem;
+    color: #c4c4c4;
     margin-bottom: 1rem;
 }
-.card {
-    background-color: rgb(28, 41, 52);
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
+
+p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    color: #d1d5db;
 }
+
+/* Redes sociales */
 .conteiner-lista {
     display: flex;
     justify-content: center;
     list-style: none;
     padding: 0;
-    margin: 0;
-    text-align: center;
+    margin: 1.5rem 0;
 }
+
 .icon-redsocial {
     align-items: center;
     background-color: rgb(62, 80, 95);
-    border-radius: 10%;
-    padding: 2px;
-    margin: 5px;
-    box-shadow: 0 0 5px rgba(86, 100, 112, 0.934)
+    border-radius: 50%;
+    padding: 8px;
+    margin: 0 8px;
+    width: 50px;
+    height: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
+.icon-redsocial:hover {
+    background-color: #ffdd57; /* Color de hover */
+    transform: scale(1.1);
+}
+
+/* Información de contacto */
 h3 {
     font-size: 1.2rem;
     font-weight: 600;
+    margin-top: 1rem;
+    color: #c4c4c4;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #c4c4c4;
 }
 </style>

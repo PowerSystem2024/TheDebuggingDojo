@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue';
-import FondoLava from './FondoLava.vue';
-//Este es un arreglo con ref para que se pueda reactivar el cambio de los intereses
+import FondoLava from './PureBackground.vue';
+
 const intereses = ref([
     'Desarrollo de Software de Código Abierto: Me apasiona contribuir a proyectos de código abierto, ya que me permite colaborar con una comunidad global, aprender nuevas tecnologías y mejorar continuamente mis habilidades de programación.',
     'Inteligencia Artificial y Aprendizaje Automático: Estoy fascinado por el potencial de la inteligencia artificial para resolver problemas complejos y mejorar la toma de decisiones. Exploro técnicas de machine learning y busco aplicarlas en proyectos prácticos.',
@@ -12,7 +12,7 @@ const intereses = ref([
 
 <template>
     <div class="intereses-contenedor">
-        <FondoLava />
+        <FondoLava class="fondo-animado" />
         <ul class="contenedor-lista">
             <li class="item" v-for="interes in intereses" :key="interes">
                 {{ interes }}
@@ -22,24 +22,58 @@ const intereses = ref([
 </template>
 
 <style scoped>
+/* Contenedor principal */
 .intereses-contenedor {
-    display: flex;
     position: relative;
-    margin: 0 auto;
-    max-width: 85%;
-    padding: 1rem;
+    padding: 2rem;
+    color: #d9b8dd;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    overflow: hidden;
 }
 
+/* Fondo animado */
+.fondo-animado {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Coloca el fondo detrás del texto */
+    border-radius: 8px;
+}
+
+/* Lista de intereses */
 .contenedor-lista {
-    list-style-type: none;
-    padding: 1rem;
-    margin-bottom: .5rem;
-    color: var(--vt-c-white-soft);
-    font-size: 1.4rem;
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1; /* Asegura que el texto esté encima del fondo */
 }
 
+/* Elemento individual de la lista */
 .item {
-    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    padding: 1.2rem;
+    border-left: 4px solid #6d4c8e;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    background-color: rgba(25, 4, 27, 0.8);
+}
+
+/* Hover en cada item */
+.item:hover {
+    color:rgb(255, 255, 255);
+    transform: translateX(10px);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 768px) {
+    .item {
+        font-size: 1rem;
+        padding: 1rem;
+    }
 }
 </style>

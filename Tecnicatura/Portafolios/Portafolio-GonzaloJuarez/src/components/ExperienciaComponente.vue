@@ -19,46 +19,98 @@ const experiencias = ref([
 
 <template>
     <div class="card">
-        <h3 class="titulo">{{ titulo.toLocaleUpperCase() }}</h3>
+        <h3 class="titulo">{{ titulo }}</h3>
         <p class="fecha">{{ fecha }}</p>
         <ul class="listado">
-            <li class="item" v-for="experencia in experiencias" :key="experencia.id">
-                <img class="imagen-svg" :src="experencia.src" width="55rem" :alt="experencia.titulo">
-                <p> {{ experencia.parrafo }}</p>
+            <li class="item" v-for="experiencia in experiencias" :key="experiencia.id">
+                <img class="imagen-svg" :src="experiencia.src" width="45" :alt="experiencia.titulo">
+                <div class="info">
+                    <h4 class="item-titulo">{{ experiencia.titulo }}</h4>
+                    <p class="item-parrafo">{{ experiencia.parrafo }}</p>
+                </div>
             </li>
         </ul>
     </div>
 </template>
 
 <style scoped>
+/* Estilos para el contenedor principal */
 .card {
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    background-color: rgb(28, 41, 52);
-    border-radius: 15px;
+    background-color: rgb(55, 34, 59);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: auto;
 }
 
+/* Estilo del título */
 .titulo {
-    font-size: 1.5rem;
-    color: coral;
+    font-size: 1.75rem;
+    color: #FF7043;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0.5rem;
 }
 
+/* Estilo de la fecha */
 .fecha {
     font-size: 1rem;
-    color: burlywood;
-    margin-bottom: 1rem;
+    color: #BDB76B;
+    text-align: center;
+    margin-bottom: 1.5rem;
 }
 
+/* Listado de experiencias */
 .listado {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Elemento de cada experiencia */
+.item {
+    display: flex;
+    align-items: flex-start;
+    padding: 1.25rem;
+    background-color: rgb(27 11 29);
+    border-radius: 8px;
+    transition: background 0.3s;
+    gap: 1rem;
+}
+
+.item:hover {
+    background-color: rgb(103 70 109);
+}
+
+/* Imagen dentro de cada experiencia */
+.imagen-svg {
+    width: 75px;
+    height: 75px;
+}
+
+/* Información dentro de cada experiencia */
+.info {
     display: flex;
     flex-direction: column;
 }
 
-.item {
-    align-items: center;
-    display: flex;
-    padding: 1rem;
-    gap: 1.5rem;
+/* Título de cada experiencia */
+.item-titulo {
+    font-size: 1.25rem;
+    color: #13b4a2;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
 }
+
+/* Descripción de cada experiencia */
+.item-parrafo {
+    font-size: 0.95rem;
+    color: #E1E8EB;
+    line-height: 1.5;
+    text-align: justify;
+}
+
 </style>
