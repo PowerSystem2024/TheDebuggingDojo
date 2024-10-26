@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue';
-import FondoLava from './PureBackground.vue';
+import PureBackground from './PureBackground.vue';
 
 const intereses = ref([
     'Desarrollo de Software de Código Abierto: Me apasiona contribuir a proyectos de código abierto, ya que me permite colaborar con una comunidad global, aprender nuevas tecnologías y mejorar continuamente mis habilidades de programación.',
@@ -12,7 +12,7 @@ const intereses = ref([
 
 <template>
     <div class="intereses-contenedor">
-        <FondoLava class="fondo-animado" />
+        <PureBackground class="fondo-animado" />
         <ul class="contenedor-lista">
             <li class="item" v-for="interes in intereses" :key="interes">
                 {{ interes }}
