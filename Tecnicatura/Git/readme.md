@@ -548,3 +548,74 @@ Segundo Semestre Parte 8:
 Revisar y ejecutar cada comando, hacerlo como practica: NO olvidar hacer lo requerido por el Tutor Nico, lo que sea tarea o investigación.
 
 **Profesor Ariel Betancud**
+
+
+
+# CLASE 10 MIÉRCOLES 16 DE OCTUBRE DEL 2024 - Portafolio 10
+
+## GITHUB
+
+#### Flujo de trabajo profesional
+
+Haciendo *merge* de ramas de desarrollo a *main*
+
+Para poder desarrollar software de manera óptima y ordenada, necesitamos tener un flujo de trabajo profesional, que nos permita trabajar en conjunto sin interrumpir el trabajo de otros desarrolladores.
+
+#### Una buena práctica de flujo de trabajo sería la siguiente:  
+1.  **Crear ramas**
+2.  **Asignar una rama a cada programador**
+3.  **El programador baja el repositorio con git pull origin master**
+4.  **El programador cambia de rama**
+5.  **El programador trabaja en esa rama y hace commits**
+6.  **El programador sube su trabajo con git push origin #nombre_rama**
+7.  **El encargado de organizar el proyecto baja, revisa y unifica todos los cambios**
+
+## PORTAFOLIO
+
+Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Tutor:
+
+**Dante Nicolás Martinez**
+
+Segundo Semestre Parte 8:
+
+[***Video Capitulo 9***](https://drive.google.com/file/d/1Z80SxVKmkzhzVY5hIxTDtWjHfryHgt1J/view?usp=drive_link)
+
+[***PDF***](https://drive.google.com/file/d/1SwPO2PrveW0DRGXyfzKD9yYWeKJUlCkm/view?usp=drive_link)
+
+Revisar y ejecutar cada comando, hacerlo como practica: NO olvidar hacer lo requerido por el Tutor Nico, lo que sea tarea o investigación.********
+
+**Profesor Ariel Betancud**
+
+
+
+
+# CLASE 11 MIÉRCOLES 23 DE OCTUBRE DEL 2024 - Portafolio 11
+
+## GITHUBA
+
+**Flujo de trabajo profesional -> Archivos binarios**
+
+Las imagenes cargandolas en el repositorio, representan un problema: porque las imagenes son pesadas, y si la subimos al repositorio, siempre que hagamos cambios, vamos a estar trayendo la imagen siempre, estas imagenes son binarios para GitHub, mientras mas binarios carguemos, más pesado va a ser el repositorio, algo que no es parte de las buenas practicas.  
+
+  
+Otra cosa muy importante a tener en cuenta, es que en cada commit que hagamos hay un tamaño predefinido para la carga, este no lo podemos superar o no podremos subir los commits, el tamaño es 100 mb, si acoplamos un archivo binario en un commit que pese mas de esto, será un problema, no nos dejará seguir commiteando, porque siempre seguirá arrastrando el archivo binario.
+
+  
+
+## PORTAFOLIO
+
+Vamos a ver unos videos de como avanzar en lo que es un portafolio por el Tutor:
+
+**Dante Nicolás Martinez***
+
+Segundo Semestre Parte 9:
+
+[***Video Capitulo 10***](https://drive.google.com/file/d/14Ykgp8zJcjjuZlg_JSFiwmjeIT7qUt27/view?usp=drive_link)
+
+  
+
+[***PDF***](https://drive.google.com/file/d/1RTKm9QSD_ylnDD3Q719lYqhlYW48cOHe/view?usp=drive_link)
+
+  Revisar y ejecutar cada comando, hacerlo como practica: NO olvidar hacer lo requerido por el Tutor Nico, lo que sea tarea o investigación.
+
+**Profesor Ariel Betancud**
