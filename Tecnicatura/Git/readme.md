@@ -550,7 +550,6 @@ Revisar y ejecutar cada comando, hacerlo como practica: NO olvidar hacer lo requ
 **Profesor Ariel Betancud**
 
 
-
 # CLASE 10 MIÉRCOLES 16 DE OCTUBRE DEL 2024 - Portafolio 10
 
 ## GITHUB
