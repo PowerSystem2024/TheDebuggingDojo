@@ -1,8 +1,8 @@
 # ----------- Listas Parte 1 -------------
 
-# lista = Ariel, Liliana, Natalia, Osvaldo 
+# lista = Florencia, Gonzalo, Pablo, Paula
 
-nombres = ['Naty', 'Osvaldo', 'Lily',  'Ariel']
+nombres = ['Florencia', 'Gonzalo', 'Pablo',  'Paula']
 
 print(nombres)
 print(nombres[0])
@@ -21,8 +21,8 @@ print(nombres[1:])
 
 # Modificar un valor
 
-nombres[2] = 'Liliana'
-nombres[0] = 'Natalia'
+nombres[2] = '  Nahuel'
+nombres[0] = 'Gabriel'
 
 print(nombres)
 
@@ -42,21 +42,21 @@ print(len(nombres))
 
 # Agregar un elemento 
 
-nombres.append('Marcelo')
+nombres.append('Valentin')
 print(nombres)
 
 # Insertar elemento en un indice 
 
-nombres.insert(1, 'Alberto')
+nombres.insert(1, 'Lazaro')
 print(nombres)
 
-nombres.insert(3, 'Debora')
+nombres.insert(3, 'Leandro')
 print(nombres)
 
 
 # Eliminar un elemento 
 
-nombres.remove('Alberto')
+nombres.remove('Valentin')
 print(nombres)
 
 # Eliminar ultimo elemento
