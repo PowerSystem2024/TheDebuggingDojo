@@ -16,7 +16,6 @@ persona1 = Persona('Gabriel', 'Bruni', 42793717, 24) # Necesitamos enviar argume
 #print(persona1.apellido)
 #print(persona1.edad)
 print(f'El objeto1 de la clase persona: {persona1.nombre} {persona1.apellido} Su edad es: {persona1.edad}')
-
 persona2 = Persona('Osvaldo', 'Giordanini', 28421397, 45)
 print(f'El objeto2 de la clase persona: {persona2.nombre} {persona2.apellido} Su edad es: {persona2.edad}')
 
