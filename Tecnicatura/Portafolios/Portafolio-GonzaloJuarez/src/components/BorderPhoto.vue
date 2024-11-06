@@ -45,14 +45,14 @@ h2{
   position:absolute;
   top:calc(0% + 10px);
   left:calc(0% + 10px);
-  
+
 }
 @keyframes rotate {
   0%{
     transform:rotate(0deg);
   }
   50%{
-    trasnform:rotate(180deg);
+    transform:rotate(180deg);
   }
   100%{
     transform:rotate(360deg);

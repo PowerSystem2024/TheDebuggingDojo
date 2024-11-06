@@ -1,15 +1,22 @@
 <script setup>
 import BorderPhoto from './BorderPhoto.vue';
-const gon = 'src/assets/gon.jpg';
+import Linkedin from '/src/assets/linkedin_icon.svg';
+import Instagram from '/src/assets/instagram_icon.svg';
+import GitHub from '/src/assets/github_icon.svg';
+import Email from '/src/assets/email_icon.svg';
+import Curriculum from '/src/assets/cv_resume_icon.svg';
+import Gon from '/src/assets/gon.jpg';
+
+
 const title = 'Gonzalo Juarez';
 const description = 'Técnico Universitario en Programación';
 const presentation = 'Bienvenidos a mi portafolio personal. Soy estudiante de la carrera Tecnicatura en Programación en la Universidad Tecnológica Nacional, Facultad Regional de San Rafael (UTN-FRSR), Argentina. Aunque estoy cursando la carrera, mi pasión por la programación y mi deseo de aprender constantemente me motivan a seguir mejorando. Actualmente, estoy adquiriendo conocimientos en lenguajes como Java, Python y JavaScript, y herramientas como GitHub, HTML y CSS'
 const socialnetworks = [
-    {id: 1, name: 'Linkedin', src: 'src/assets/linkedin_icon.svg', url: 'https://www.linkedin.com/in/gonzalo-ariel-juarez-4b876a264' },
-    {id: 2, name: 'Instagram', src: 'src/assets/instagram_icon.svg', url: 'https://www.instagram.com/gonzaa_juarez/' },
-    {id: 3, name: 'GitHub', src: 'src/assets/github_icon.svg', url: 'https://github.com/GonzaaJuarez' },
-    {id: 4, name: 'Email', src: 'src/assets/email_icon.svg', url: 'mailto:GonzaloArielJuarez@gmail.com' },
-    {id: 5, name: 'Curriculum Vitae', src: 'src/assets/cv_resume_icon.svg', url: 'https://www.google.com.ar' }
+    {id: 1, name: 'Linkedin', src: Linkedin, url: 'https://www.linkedin.com/in/gonzalo-ariel-juarez-4b876a264' },
+    {id: 2, name: 'Instagram', src: Instagram, url: 'https://www.instagram.com/gonzaa_juarez/' },
+    {id: 3, name: 'GitHub', src: GitHub, url: 'https://github.com/GonzaaJuarez' },
+    {id: 4, name: 'Email', src: Email, url: 'mailto:gonzaloarieljuarez11@gmail.com' },
+    {id: 5, name: 'Curriculum Vitae', src: Curriculum, url: 'https://www.google.com.ar' }
 ];
 const phone = '+54 9 2625402555';
 const residence = 'San Rafael, Mendoza, Argentina';
@@ -19,7 +26,7 @@ const residence = 'San Rafael, Mendoza, Argentina';
     <section class="datos-personales">
         <div class="card">
             <BorderPhoto class="borde"/>
-            <img :src="gon" alt="Foto de Gonzalo Juarez" class="profile-image" />
+            <img :src=Gon alt="Foto de Gonzalo Juarez" class="profile-image" />
             <h1>{{ title }}</h1>
             <h2>{{ description }}</h2>
             <p>{{ presentation }}</p>
@@ -128,9 +135,4 @@ h3 {
     color: #c4c4c4;
 }
 
-h4 {
-    font-size: 1rem;
-    font-weight: 400;
-    color: #c4c4c4;
-}
 </style>
