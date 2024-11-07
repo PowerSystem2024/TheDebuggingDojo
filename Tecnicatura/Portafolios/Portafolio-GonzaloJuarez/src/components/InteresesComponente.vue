@@ -39,8 +39,9 @@ const intereses = ref([
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: -1; /* Coloca el fondo detrás del texto */
+    z-index: -1;
     border-radius: 8px;
+    overflow: hidden;
 }
 
 /* Lista de intereses */
@@ -48,7 +49,7 @@ const intereses = ref([
     list-style: none;
     padding: 0;
     margin: 0;
-    z-index: 1; /* Asegura que el texto esté encima del fondo */
+    z-index: 1;
 }
 
 /* Elemento individual de la lista */
@@ -60,20 +61,28 @@ const intereses = ref([
     border-radius: 8px;
     transition: transform 0.3s ease, background-color 0.3s ease;
     background-color: rgba(25, 4, 27, 0.8);
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 /* Hover en cada item */
 .item:hover {
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     transform: translateX(10px);
     background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Adaptación para pantallas pequeñas */
 @media (max-width: 768px) {
+    .intereses-contenedor {
+        padding: 1rem; /* Reduce el padding para evitar que sobresalga */
+    }
+
     .item {
         font-size: 1rem;
         padding: 1rem;
+        margin-bottom: 1rem;
+        border-left: 3px solid #6d4c8e;
     }
 }
 </style>

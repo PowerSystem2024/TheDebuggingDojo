@@ -113,4 +113,39 @@ const experiencias = ref([
     text-align: justify;
 }
 
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .card {
+        padding: 1rem;
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+    }
+
+    .fecha {
+        font-size: 0.9rem;
+    }
+
+    .item {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .imagen-svg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .item-titulo {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .item-parrafo {
+        font-size: 0.85rem;
+        text-align: justify;
+    }
+}
 </style>
